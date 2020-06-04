@@ -1,16 +1,14 @@
-import React, {useState} from 'react';
+import React, {useContext} from 'react';
+import CountContext from '../context/count/countContext';
 
-function Display(props) {
-    // const [display,setDisplay] = useState(0);
+const Display = ({count}) => {
+    const countContext = useContext(CountContext);
 
     return (
         <section className="display">
-            This is the Display for the Counter.
+            <h2>{count}</h2>
         </section>
     )
-
-
 }
 
 export default Display;
-

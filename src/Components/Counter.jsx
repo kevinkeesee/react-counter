@@ -3,7 +3,7 @@ import Display from './Display';
 import ButtonPad from './ButtonPad';
 
 
-function Counter() {
+const Counter = () => {
     return (
         <div className="counter">
             <Display/>
