@@ -1,12 +1,10 @@
-import React, {useContext} from 'react';
-import CountContext from '../context/count/countContext';
+import React from 'react';
 
 const Display = ({count}) => {
-    const countContext = useContext(CountContext);
 
     return (
         <section className="display">
-            <h2>{count}</h2>
+            <p>{count}</p>
         </section>
     )
 }
